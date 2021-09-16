@@ -6,11 +6,24 @@
 //
 
 import SwiftUI
+import Nuke
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Text("Hello, world!")
+                .padding()
+        }.onAppear {
+            Nuke.loadImage(with: "https://placehold.jp/150x150.png", into: UIImageView()) { response in
+                switch response {
+                case.success(let imageRes):
+                    debugPrint(imageRes)
+                case .failure(let error):
+                    debugPrint(error)
+                }
+            }
+        }
+
     }
 }
 

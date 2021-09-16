@@ -14,6 +14,7 @@
 		A8DD9D9E26F2D2F3008E9B81 /* APIKit in Frameworks */ = {isa = PBXBuildFile; productRef = A8DD9D9D26F2D2F3008E9B81 /* APIKit */; };
 		A8DD9DA126F2D37D008E9B81 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A8DD9DA026F2D37D008E9B81 /* Alamofire */; };
 		A8DD9DA426F2D3BF008E9B81 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = A8DD9DA326F2D3BF008E9B81 /* FacebookCore */; };
+		A8DD9DA626F2D848008E9B81 /* Nuke.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8DD9DA526F2D848008E9B81 /* Nuke.xcframework */; };
 		B26AC3750DD4612F390CD2B2 /* Pods_iOS15ProjectDependenciesSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C846A5F9521356298038A53 /* Pods_iOS15ProjectDependenciesSample.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		A8DD9D9026F2D277008E9B81 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A8DD9D9226F2D278008E9B81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8DD9D9526F2D278008E9B81 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A8DD9DA526F2D848008E9B81 /* Nuke.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Nuke.xcframework; path = Carthage/Build/Nuke.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +36,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8DD9D9E26F2D2F3008E9B81 /* APIKit in Frameworks */,
+				A8DD9DA626F2D848008E9B81 /* Nuke.xcframework in Frameworks */,
 				A8DD9DA426F2D3BF008E9B81 /* FacebookCore in Frameworks */,
 				A8DD9DA126F2D37D008E9B81 /* Alamofire in Frameworks */,
 				B26AC3750DD4612F390CD2B2 /* Pods_iOS15ProjectDependenciesSample.framework in Frameworks */,
@@ -49,7 +52,6 @@
 				32FC43833FA725B4475114A8 /* Pods-iOS15ProjectDependenciesSample.debug.xcconfig */,
 				155A5929627CAD5759DFB118 /* Pods-iOS15ProjectDependenciesSample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -93,6 +95,7 @@
 		E0C77F7A2CD27529CCC628D2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A8DD9DA526F2D848008E9B81 /* Nuke.xcframework */,
 				3C846A5F9521356298038A53 /* Pods_iOS15ProjectDependenciesSample.framework */,
 			);
 			name = Frameworks;

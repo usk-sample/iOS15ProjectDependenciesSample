@@ -10,6 +10,7 @@ import APIKit
 import Alamofire
 import FacebookCore
 import AppLovinSDK
+import Nuke
 
 @main
 struct iOS15ProjectDependenciesSampleApp: App {
