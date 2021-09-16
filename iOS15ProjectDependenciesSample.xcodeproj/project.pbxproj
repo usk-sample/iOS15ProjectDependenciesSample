@@ -11,6 +11,9 @@
 		A8DD9D9126F2D277008E9B81 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DD9D9026F2D277008E9B81 /* ContentView.swift */; };
 		A8DD9D9326F2D278008E9B81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8DD9D9226F2D278008E9B81 /* Assets.xcassets */; };
 		A8DD9D9626F2D278008E9B81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8DD9D9526F2D278008E9B81 /* Preview Assets.xcassets */; };
+		A8DD9D9E26F2D2F3008E9B81 /* APIKit in Frameworks */ = {isa = PBXBuildFile; productRef = A8DD9D9D26F2D2F3008E9B81 /* APIKit */; };
+		A8DD9DA126F2D37D008E9B81 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A8DD9DA026F2D37D008E9B81 /* Alamofire */; };
+		A8DD9DA426F2D3BF008E9B81 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = A8DD9DA326F2D3BF008E9B81 /* FacebookCore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8DD9D9E26F2D2F3008E9B81 /* APIKit in Frameworks */,
+				A8DD9DA426F2D3BF008E9B81 /* FacebookCore in Frameworks */,
+				A8DD9DA126F2D37D008E9B81 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +89,11 @@
 			dependencies = (
 			);
 			name = iOS15ProjectDependenciesSample;
+			packageProductDependencies = (
+				A8DD9D9D26F2D2F3008E9B81 /* APIKit */,
+				A8DD9DA026F2D37D008E9B81 /* Alamofire */,
+				A8DD9DA326F2D3BF008E9B81 /* FacebookCore */,
+			);
 			productName = iOS15ProjectDependenciesSample;
 			productReference = A8DD9D8B26F2D277008E9B81 /* iOS15ProjectDependenciesSample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,11 @@
 				Base,
 			);
 			mainGroup = A8DD9D8226F2D277008E9B81;
+			packageReferences = (
+				A8DD9D9C26F2D2F3008E9B81 /* XCRemoteSwiftPackageReference "APIKit" */,
+				A8DD9D9F26F2D37D008E9B81 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				A8DD9DA226F2D3BF008E9B81 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+			);
 			productRefGroup = A8DD9D8C26F2D277008E9B81 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +357,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A8DD9D9C26F2D2F3008E9B81 /* XCRemoteSwiftPackageReference "APIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ishkawa/APIKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		A8DD9D9F26F2D37D008E9B81 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		A8DD9DA226F2D3BF008E9B81 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A8DD9D9D26F2D2F3008E9B81 /* APIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8DD9D9C26F2D2F3008E9B81 /* XCRemoteSwiftPackageReference "APIKit" */;
+			productName = APIKit;
+		};
+		A8DD9DA026F2D37D008E9B81 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8DD9D9F26F2D37D008E9B81 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		A8DD9DA326F2D3BF008E9B81 /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8DD9DA226F2D3BF008E9B81 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A8DD9D8326F2D277008E9B81 /* Project object */;
 }

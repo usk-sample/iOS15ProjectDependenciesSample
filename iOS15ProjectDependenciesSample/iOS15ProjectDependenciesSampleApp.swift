@@ -6,6 +6,9 @@
 //
 
 import SwiftUI
+import APIKit
+import Alamofire
+import FacebookCore
 
 @main
 struct iOS15ProjectDependenciesSampleApp: App {
