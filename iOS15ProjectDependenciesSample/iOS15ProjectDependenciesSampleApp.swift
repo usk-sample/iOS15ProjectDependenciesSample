@@ -9,6 +9,7 @@ import SwiftUI
 import APIKit
 import Alamofire
 import FacebookCore
+import AppLovinSDK
 
 @main
 struct iOS15ProjectDependenciesSampleApp: App {
